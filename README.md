@@ -28,3 +28,10 @@ Para executar os testes, você pode usar o comando `gradle test` no terminal. Os
 Depois de executar os testes, `build/report/tests/test/index.html` será gerada. Só abrir o index.html
 
 
+## Melhorias Futuras
+
+Aqui estão algumas melhorias que planejo fazer no código posteriormente:
+
+1. **Adicionar Logs**: Implementar logs para melhor rastreamento e depuração durante a execução dos testes.
+2. **Melhorar Legibilidade do Código**: Refatorar o código para torná-lo mais legível e fácil de entender. Isso inclui a padronização de nomes de variáveis e métodos.
+3. **Evitar Duplicidade de Código**: Identificar e remover duplicações de código para melhorar a manutenção e reduzir a chance de erros.
