@@ -55,7 +55,7 @@ public class LoginTest extends BaseTest {
     assertTrue(modalText.isDisplayed());
   }
 
-  @DisplayName("CT002.004 - Tentativa de realizar login")
+  @DisplayName("CT003.001 - Tentativa de realizar login")
   @Test
   void DeveRealizarLogout() {
     registrarConta.registrarContaComSucesso();

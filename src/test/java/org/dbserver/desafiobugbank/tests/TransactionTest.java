@@ -17,7 +17,7 @@ public class TransactionTest extends BaseTest {
   RegisterTest registerTest = new RegisterTest();
   RegistrarConta registrarConta;
 
-  @DisplayName("CT003.001 - Deve realizar transação com sucesso")
+  @DisplayName("CT004.001 - Deve realizar transação com sucesso")
   @Test
   void DeveRealizarTransacaoComSucesso() throws InterruptedException {
     RegistrarConta registrarConta = new RegistrarConta();
@@ -43,7 +43,7 @@ public class TransactionTest extends BaseTest {
     transactionPage.getTransferSubmitButton().click();
   }
 
-  @DisplayName("CT003.002 - Tentativa de transferir para a mesma conta")
+  @DisplayName("CT004.002 - Tentativa de transferir para a mesma conta")
   @Test
   void TentativaTransferirParaMesmaConta() {
 
@@ -68,7 +68,7 @@ public class TransactionTest extends BaseTest {
     transactionPage.getCloseModalButton().click();
   }
 
-  @DisplayName("CT003.003 - Tentativa de transferir com campos vazios")
+  @DisplayName("CT004.003 - Tentativa de transferir com campos vazios")
   @Test
   void TentativaTransferirComCamposVazios() {
 
@@ -90,7 +90,7 @@ public class TransactionTest extends BaseTest {
     assertTrue(errorMessage.contains("transferValue must be a `number` type"));
   }
 
-  @DisplayName("CT003.004 - Tentativa de transferir com valor de transferência menor que zero")
+  @DisplayName("CT004.004 - Tentativa de transferir com valor de transferência menor que zero")
   @Test
   void TentativaTransferirComValorMenorQueZero() {
 
@@ -113,7 +113,7 @@ public class TransactionTest extends BaseTest {
     transactionPage.getCloseModalButton().click();
   }
 
-  @DisplayName("CT003.005 - Tentativa de transferir para conta inválida ou inexistente")
+  @DisplayName("CT004.005 - Tentativa de transferir para conta inválida ou inexistente")
   @Test
   void TentativaTransferirParaContainvalidaOuInexistente() {
 
